@@ -1,19 +1,16 @@
-% LaTeX file for resume 
-% This file uses the resume document class (res.cls)
-
-\documentstyle[hyperref, margin, line]{res_yy}
-%\documentclass[margin]{res} 
-% the margin option causes section titles to appear to the left of body text 
-%\textwidth=5.2in % increase textwidth to get smaller right margin
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+%\usepackage{res_yy} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{graphicx}
+\usepackage{hyperref}
 \hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
 \renewcommand{\namefont}{\LARGE\emph}
 
-\begin{document} 
- 
-\name{Yubing Luo} 
- 
+\begin{document}
+
+\name{Molly(Yubing) Luo} 
+
 \address{
 {\it (+1)226 929 2310}
 \ \ \ \ \ 
@@ -21,73 +18,64 @@
 \ \ \ \ \ 
 \href{http://mollybing.github.com}{\it mollybing.github.com}
 }
-
-\begin{resume}  
-
+ 
+\begin{resume}
+ 
 \section{\uppercase{skill highlights}}
 \begin{itemize}
-\item Skilled at web page frontend: CSS3, HTML5, JQuery, Node.js and ASP.NET C\#
+\item Skilled at web frontend: CSS3, HTML5, JQuery, Node.js and ASP.NET C\#
 \item Experienced with SQL Query, PHP and Java for backend
 \item Knowledgeable with software development cycle, OOP philosophy and MVC framework
 \item Effective communication skills
 \end{itemize}
 
+ 
 \section{\uppercase{Education}}
 {\bf Bachelor of Software Engineering} \hfill Honours, Co-operative Program \\
 University of Waterloo \hfill 2009 - 2014
 
 \section{\uppercase{work Experience}}
-{\bf Oracle} \hfill Software Engineering Intern \\
-Boston, MA \hfill September 2013 - December 2013
+\includegraphics[width=2.8cm]{Oracle_logo.png} \hfill Software Engineering Intern \\
+Boston, MA \hfill Jan - Apr 2013, Sept - Dec 2013
 \begin{itemize}
-\item Led the tablet mode development of Endeca Information Discovery
-\item Extended and built the synchronized data mode for tablet version
-\item Introduced multi-touch gesture handling for tablet version of EID
+\item Leader of developing the tablet version of Endeca Information Discovery (EID)
+\item Full stack developing the tablet version of EID: frontend UI convert; exsiting data model extension; introduced multi-touch gesture
 \item Assisted on big data and real-time analytics
-%\item {\it Worked primarily with Java, JSP, JavaScript, Ext JS and JQuery}
+\item Participated in the 3.0 release of EID Framework
+\item Redesigned and developed the bookmark component of EID
+\item {\it Worked primarily with Java, JSP, JavaScript, Ext JS, JQuery and Ruby}
 \end{itemize} 
  
-{\bf Oracle} \hfill  Software Engineering Intern \\
-Boston, MA \hfill January 2013 - April 2013
-\begin{itemize}
-\item Participated in the 3.0 release of Endeca Information Discovery(EID) Framework
-\item Adjusted and improved the user experience of EID on iPad 
-\item Redesigned and developed the bookmark component of EID
-\item {\it Worked primarily with Java, JSP, JavaScript, Ext JS and JQuery}
-\end{itemize}
-
 {\bf Oculys Health Informatics} \hfill Mobile Solution Intern \\
-Kitchener, ON \hfill May 2012 - August 2012
+Kitchener, ON \hfill May - Aug 2012
 \begin{itemize}
 \item Designed and developed the Blackberry application
 \item Developed,tested and released the second phase of main web-based product
 \item Participated in the creation of multi-client dynamic database storage model
-\item Applied the idea of lazy loading to optimize website content loading performace
+\item Applied lazy loading to optimize website content loading performace
 \item {\it Worked primarily with Blackberry SDK, JavaScript, JQuery}
 \end{itemize}
 
 {\bf MetroLinx} \hfill Web Developer Intern \\
-Toronto, ON \hfill September 2011 - December 2011
+Toronto, ON \hfill Sept - Dec 2011
 \begin{itemize}
-\item Built the internal blog for Bruce McCuaig and the internal financial recording software for the accounting department
+\item Built the internal news announcement website for CEO Bruce McCuaig from scratch and the internal financial recording software for the accounting department
 \item Maintenance and bug fixes for \href{http://www.metrolinx.com/en/aboutus/about_us_index.aspx}{Metrolinx.com}
 \item {\it Worked primarily with ASP.NET C\#}
 \end{itemize}
 
 {\bf Christie Digital System Inc.} \hfill Software Quality Assurance \\
-Kitchener, ON \hfill January 2011 - April 2011
+Kitchener, ON \hfill Jan - Apr 2011
 \begin{itemize}
 \item Participated in Agile development and helped on software development documentation
 \item Built and run test script for \href{http://www.christiedigital.com/en-us/business/products/projectors/3-chip-dlp/m-series/pages/default.aspx}{Christie M Series DLP Projectors}
-\item {\it Worked primarily with Bash shell, tortoiseSVN}
+\item {\it Worked primarily with shell script, tortoiseSVN}
 \end{itemize}
 
 \section{\uppercase{Other Projects}}
 \begin{itemize}
-\item Quest class selection toolkit: Helps students check and select their courses upon their Android devices; School project
+\item Quest class selection toolkit: Helps students check and select their courses upon their Android devices; Version 4.0.x; School project
 \item \href{http://www.freedomlunch.ca/most-popular}{FreedomLunch}: Designed and developed the e-commerce website for this startup company; Make use of open source framework \href{http://www.opencart.com/}{OpenCart}
-\item \href{http://www.eatto.ca/}{eatTo}: Assisted the development of eatTo \href{https://itunes.apple.com/us/app/yi-tong-mei-shi-huang-ye/id551261942?ls=1&mt=8}{iOS app}
-\item Linux game madbirds: A similar version of Angry Bird on Linux; School project
 \end{itemize}
 
 \section{\uppercase{University Activities}}
@@ -95,8 +83,7 @@ Kitchener, ON \hfill January 2011 - April 2011
 \item {\bf Class MathSoc Representative} \hfill 2011,2012 \\
 Took the initiative to write weekly email updates to the class. Present biweekly Mathematics courses tutorials
 \item {\bf Campus Mobile Club Executives} \hfill 2013,2014 \\
-Organized club members programming sessions weekly. BlackBerry app development introduction. Presented iOS app development sessions
-\item {\bf \href{http://www.creeksidechurch.ca/index.php}{Creekside Church} Singer Volunteer} \hfill Spring 2013 \\
+Organized club members programming sessions weekly. BlackBerry app development introduction. \item {\bf \href{http://www.creeksidechurch.ca/index.php}{Creekside Church} Singer Volunteer} \hfill Spring 2013 \\
 Participated in the worship performing arts as a \href{http://www.creeksidechurch.ca/volunteer.php}{singer volunteer}; Performed singing by church schedule
 \end{itemize}
 
@@ -109,10 +96,7 @@ Participated in the worship performing arts as a \href{http://www.creeksidechurc
 \end{itemize}
 
 \section{\uppercase{Interests}}
-Singing, travel, swimming, reading, free food
+Singing, travel, swimming, reading, ice cream
 
 \end{resume} 
 \end{document} 
-
-
-
